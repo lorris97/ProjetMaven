@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 10 Mai 2019 à 15:36
+-- Généré le :  Ven 10 Mai 2019 à 16:11
 -- Version du serveur :  5.6.15-log
 -- Version de PHP :  5.4.24
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `gestionformations`
 --
+CREATE DATABASE IF NOT EXISTS `gestionformations` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `gestionformations`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `comptes`
 --
 
+DROP TABLE IF EXISTS `comptes`;
 CREATE TABLE IF NOT EXISTS `comptes` (
   `login` varchar(100) NOT NULL,
   `mdp` varchar(100) NOT NULL,
